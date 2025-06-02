@@ -122,6 +122,8 @@
 
     Handler.prototype.buildMap = function(options, onMapLoad) {
       var _this = this;
+      if(options.mapId == null) { options.mapId = "DefaultMapId" }
+
       if (onMapLoad == null) {
         onMapLoad = function() {};
       }
@@ -942,7 +944,7 @@
       map: google.maps.Map,
       mapTypez: google.maps.MapTypeId,
       markerImage: google.maps.MarkerImage,
-      marker: google.maps.Marker,
+      marker: google.maps.marker.AdvancedMarkerElement,
       infowindow: google.maps.InfoWindow,
       listener: google.maps.event.addListener,
       clusterer: MarkerClusterer,
