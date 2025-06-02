@@ -934,6 +934,8 @@
 }).call(this);
 (function() {
   this.Gmaps.Google.Primitives = function() {
+    console.log("Init primitives")
+
     var factory;
     factory = {
       point: google.maps.Point,
