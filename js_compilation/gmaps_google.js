@@ -946,7 +946,7 @@
       markerImage: google.maps.MarkerImage,
       marker: google.maps.marker.AdvancedMarkerElement,
       infowindow: google.maps.InfoWindow,
-      listener: google.maps.event.addListener,
+      listener: addEventListener,
       clusterer: MarkerClusterer,
       listenerOnce: google.maps.event.addListenerOnce,
       polyline: google.maps.Polyline,
